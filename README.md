@@ -10,14 +10,14 @@ The Legacy Pagecounts API (https://wikitech.wikimedia.org/wiki/Analytics/AQS/Leg
 The Pageviews API (https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews) provides access to desktop, mobile web, and mobile app traffic data from July 2015 through last month.
 #### Final Data
 The csv file en-wikipedia_traffic_200712-201809.csv consists of the following fields
-year: year of the pagecount value
-month: month of the page count value
-pagecount_all_views: taken from legacy page counts wikimedia, these are pagecounts of all site views from December 2007 through July 2016
-pagecount_desktop_views: taken from legacy page counts wikimedia, these are pagecounts of all desktop views from December 2007 through July 2016
-pagecount_mobile_views: taken from legacy page counts wikimedia, these are pagecounts of all mobile views from December 2007 through July 2016
-pageview_all_views: taken from pageview wikimedia, these are pagecounts of all views from July 2015 to September 2019, calculated as a sum of the pageview_mobile_views and pageview_desktop_views 
-pageview_desktop_views: taken from pageview wikimedia, these are pagecounts of all desktop views from July 2015 to September 2019
-pageview_mobile_views: taken from pageview wikimedia, these are pagecounts of all mobile views from July 2015 to September 2019
+- year: year of the pagecount value
+- month: month of the page count value
+- pagecount_all_views: taken from legacy page counts wikimedia, these are pagecounts of all site views from December 2007 through July 2016
+- pagecount_desktop_views: taken from legacy page counts wikimedia, these are pagecounts of all desktop views from December 2007 through July 2016
+- pagecount_mobile_views: taken from legacy page counts wikimedia, these are pagecounts of all mobile views from December 2007 through July 2016
+- pageview_all_views: taken from pageview wikimedia, these are pagecounts of all views from July 2015 to September 2019, calculated as a sum of the pageview_mobile_views and pageview_desktop_views 
+- pageview_desktop_views: taken from pageview wikimedia, these are pagecounts of all desktop views from July 2015 to September 2019
+- pageview_mobile_views: taken from pageview wikimedia, these are pagecounts of all mobile views from July 2015 to September 2019
 #### Special Considerations
-Data from the Pageview API excludes spiders/crawlers, while data from the Pagecounts API does not as the Pageview API (but not the Pagecount API) allows you to filter by agent=user.
-pageview_all_views in the final csv is a derived field as a sum of pageview_desktop_views and pageview_mobile_views
+- Data from the Pageview API excludes spiders/crawlers, while data from the Pagecounts API does not as the Pageview API (but not the Pagecount API) allows you to filter by agent=user.
+- pageview_all_views in the final csv is a derived field as a sum of pageview_desktop_views and pageview_mobile_views
