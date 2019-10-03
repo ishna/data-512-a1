@@ -18,6 +18,11 @@ The csv file en-wikipedia_traffic_200712-201809.csv consists of the following fi
 - pageview_all_views: taken from pageview wikimedia, these are pagecounts of all views from July 2015 to September 2019, calculated as a sum of the pageview_mobile_views and pageview_desktop_views 
 - pageview_desktop_views: taken from pageview wikimedia, these are pagecounts of all desktop views from July 2015 to September 2019
 - pageview_mobile_views: taken from pageview wikimedia, these are pagecounts of all mobile views from July 2015 to September 2019
+
+hcds-a1-data-curation is an ipython notebook with the data processing and curation code
+
+testplot.png is the visualisation for mobile, desktop and total pageviews over the years
+
 #### Special Considerations
 - Data from the Pageview API excludes spiders/crawlers, while data from the Pagecounts API does not as the Pageview API (but not the Pagecount API) allows you to filter by agent=user.
 - pageview_all_views in the final csv is a derived field as a sum of pageview_desktop_views and pageview_mobile_views
